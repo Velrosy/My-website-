@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fahad's Award-Winning Portfolio - World-Class Developer & Designer creating exceptional digital experiences">
+    <meta name="keywords" content="web developer, designer, portfolio, video editing, discord design, AI solutions, award-winning">
+    <meta name="author" content="Fahad">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#6366f1">
+    <meta property="og:title" content="Fahad - Award-Winning Developer & Designer">
+    <meta property="og:description" content="Creating world-class digital experiences with cutting-edge technology and luxurious design">
+    <meta property="og:type" content="website">
+    
+    <!-- Performance & Security optimized for Cloudflare deployment -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <title>Fahad - Award-Winning Portfolio</title>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <!-- Animated Background -->
+    <div id="animatedBackground"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">F</span>
+                <span class="logo-dot"></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <div class="theme-toggle-track">
+                        <div class="theme-toggle-thumb">
+                            <i class="fas fa-sun sun-icon"></i>
+                            <i class="fas fa-moon moon-icon"></i>
+                        </div>
+                    </div>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="fas fa-award"></i>
+                    <span>Award-Winning Designer</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Crafting</span>
+                    <span class="title-line gradient-text">Digital Excellence</span>
+                    <span class="title-line">Beyond Imagination</span>
+                </h1>
+                <p class="hero-subtitle">
+                    World-class developer and designer creating immersive digital experiences 
+                    that captivate, inspire, and deliver exceptional results.
+                </p>
+                <div class="hero-buttons">
+                    <button class="cta-button primary" id="exploreBtn">
+                        <span>Explore My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="cta-button secondary" id="contactBtn">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate about creating digital experiences that make a difference</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="frame-glow"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a passionate full-stack developer and designer with over 5 years of experience 
+                        creating award-winning digital solutions. My expertise spans from elegant web design 
+                        to complex AI integrations, always with a focus on user experience and performance.
+                    </p>
+                    <p class="about-description">
+                        I believe in the power of thoughtful design and clean code to solve real-world problems. 
+                        Every project is an opportunity to push boundaries and create something extraordinary.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <span>JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <span>React</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <span>UI/UX Design</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" data-level="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <span>AI Integration</span>
+                            <div class="skill-level">
+                                <div class="skill-progress" data-level="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">What I offer</span>
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">Comprehensive digital solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="service-title">Video Editing</h3>
+                    <p class="service-description">Professional video editing with cinematic quality, motion graphics, and storytelling that captivates your audience.</p>
+                    <div class="service-features">
+                        <span>Motion Graphics</span>
+                        <span>Color Grading</span>
+                        <span>Audio Mixing</span>
+                    </div>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3 class="service-title">Discord Design</h3>
+                    <p class="service-description">Complete Discord server setup with custom bots, engaging designs, and community management systems.</p>
+                    <div class="service-features">
+                        <span>Server Setup</span>
+                        <span>Custom Bots</span>
+                        <span>Moderation</span>
+                    </div>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 class="service-title">Social Media</h3>
+                    <p class="service-description">Eye-catching social media graphics and content strategies that boost engagement and brand visibility.</p>
+                    <div class="service-features">
+                        <span>Content Creation</span>
+                        <span>Brand Design</span>
+                        <span>Strategy</span>
+                    </div>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="service-title">Digital Tools</h3>
+                    <p class="service-description">Custom digital tools and applications that streamline workflows and enhance productivity.</p>
+                    <div class="service-features">
+                        <span>Automation</span>
+                        <span>Integration</span>
+                        <span>Optimization</span>
+                    </div>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="service-title">AI Solutions</h3>
+                    <p class="service-description">Cutting-edge AI integrations and machine learning solutions that transform business operations.</p>
+                    <div class="service-features">
+                        <span>Machine Learning</span>
+                        <span>Automation</span>
+                        <span>Analytics</span>
+                    </div>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Website Design</h3>
+                    <p class="service-description">Premium websites with modern design, exceptional performance, and seamless user experiences.</p>
+                    <div class="service-features">
+                        <span>Responsive Design</span>
+                        <span>Performance</span>
+                        <span>SEO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">My work</span>
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">A showcase of projects that demonstrate creativity and technical excellence</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="video">Video</button>
+                <button class="filter-btn" data-filter="ai">AI Tools</button>
+                <button class="filter-btn" data-filter="discord">Discord</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>E-commerce Platform</h4>
+                            <p>Modern online store with AI recommendations</p>
+                            <div class="portfolio-links">
+                                <button class="portfolio-btn" onclick="openPortfolioModal('project1')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="portfolio-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Brand Commercial</h4>
+                            <p>Cinematic video with motion graphics</p>
+                            <div class="portfolio-links">
+                                <button class="portfolio-btn" onclick="openPortfolioModal('project2')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="portfolio-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ai">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>AI Analytics Dashboard</h4>
+                            <p>Real-time data visualization with ML</p>
+                            <div class="portfolio-links">
+                                <button class="portfolio-btn" onclick="openPortfolioModal('project3')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="portfolio-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="discord">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Community Bot</h4>
+                            <p>Advanced Discord bot with AI features</p>
+                            <div class="portfolio-links">
+                                <button class="portfolio-btn" onclick="openPortfolioModal('project4')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="portfolio-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Mobile App UI</h4>
+                            <p>Sleek mobile interface design</p>
+                            <div class="portfolio-links">
+                                <button class="portfolio-btn" onclick="openPortfolioModal('project5')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="portfolio-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Product Showcase</h4>
+                            <p>3D product animation and rendering</p>
+                            <div class="portfolio-links">
+                                <button class="portfolio-btn" onclick="openPortfolioModal('project6')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="portfolio-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Client feedback</span>
+                <h2 class="section-title">Testimonials</h2>
+                <p class="section-subtitle">What clients say about working with me</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Fahad delivered beyond our expectations. The website he created for our startup 
+                                not only looks stunning but also converts amazingly well. His attention to detail 
+                                and technical expertise is unmatched."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <span>CEO, TechStart Inc.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Working with Fahad was a game-changer for our Discord community. His custom bot 
+                                and server design transformed our user engagement completely. Professional, 
+                                creative, and reliable."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Mike Chen</h4>
+                                    <span>Community Manager, GameHub</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "The AI analytics dashboard Fahad built for us has revolutionized how we make 
+                                business decisions. The interface is intuitive and the insights are incredibly 
+                                valuable. Highly recommended!"
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Emma Rodriguez</h4>
+                                    <span>Data Director, Analytics Pro</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="nav-btn prev" id="testimonialPrev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-dots">
+                        <button class="dot active" data-slide="0"></button>
+                        <button class="dot" data-slide="1"></button>
+                        <button class="dot" data-slide="2"></button>
+                    </div>
+                    <button class="nav-btn next" id="testimonialNext">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Let's connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to start your next project? Let's create something amazing together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>fahadboss2023@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>Available upon request</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Response Time</h4>
+                            <p>Within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" id="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">F</span>
+                        <span class="logo-dot"></span>
+                    </div>
+                    <p>Creating digital excellence, one project at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#portfolio">Portfolio</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="#services">Video Editing</a>
+                        <a href="#services">Discord Design</a>
+                        <a href="#services">AI Solutions</a>
+                        <a href="#services">Web Development</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="mailto:fahadboss2023@gmail.com">Email</a>
+                        <a href="#contact">Contact Form</a>
+                        <a href="#" id="discordLink">Discord Server</a>
+                        <a href="#testimonials">Testimonials</a>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fahad. All rights reserved.</p>
+                <p>Designed & Developed with <i class="fas fa-heart"></i> by Fahad</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+        <div class="progress-ring">
+            <svg class="progress-ring__svg">
+                <circle class="progress-ring__circle" cx="25" cy="25" r="22"></circle>
+            </svg>
+        </div>
+    </button>
+
+    <!-- Portfolio Modal -->
+    <div class="portfolio-modal" id="portfolioModal">
+        <div class="modal-backdrop" onclick="closePortfolioModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closePortfolioModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Animation Container -->
+    <div class="success-animation" id="successAnimation">
+        <div class="envelope">
+            <div class="envelope-body">
+                <div class="letter">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
+            <div class="envelope-flap"></div>
+        </div>
+        <div class="success-message">
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. I'll get back to you soon.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
